@@ -1,0 +1,113 @@
+/*--------------------------------------------------------------
+# hero-area
+--------------------------------------------------------------*/
+
+.hero-area {
+  position: relative;
+	background-image: url("../img/hero/bg.svg");
+	background-position: center;
+	background-size: cover;
+	background-color: $main-color;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-self: center;
+	text-align: center;
+  .move{
+    max-height: 70px;
+    position: absolute;
+    border-radius: 16px;
+    @media only screen and (max-width: 767px) {
+     max-height: 50px;
+    }
+  }
+  .hero-inner{
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+	.hero-logo {
+		max-width: 260px;
+		margin-bottom: 25px;
+		@media only screen and (max-width: 1299px) {
+			max-width: 210px;
+			margin-bottom: 20px;
+		}
+		@media only screen and (max-width: 991px) {
+			max-width: 200px;
+			margin-bottom: 16px;
+		}
+		@media only screen and (max-width: 767px) {
+			max-width: 210px;
+		}
+	}
+	h1 {
+		font-size: 50px;
+		margin-bottom: 25px;
+		text-transform: uppercase;
+    font-weight: 700;
+		@media only screen and (max-width: 1199px) {
+			font-size: 50px;
+			margin-bottom: 18px;
+		}
+		@media only screen and (max-width: 991px) {
+			font-size: 40px;
+		}
+		@media only screen and (max-width: 767px) {
+			font-size: 36px;
+      margin-bottom: 16px;
+		}
+		@media only screen and (max-width: 482px) {
+			font-size: 30px;
+		}
+		// background-image: linear-gradient(to left, #7b42ec, #0eb3fd);
+		// background-size: 100%;
+		// background-clip: text;
+		// -webkit-background-clip: text;
+		// -moz-background-clip: text;
+		// -webkit-text-fill-color: transparent;
+		// -moz-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.9px;
+    -webkit-text-stroke-color: #fff;
+    color: transparent;
+    text-transform: uppercase;
+	}
+	p {
+		font-size: 20px;
+    color: $text-color;
+		font-weight: 400;
+		margin-bottom: 35px;
+		@media only screen and (max-width: 1199px) {
+			font-size: 19px;
+			margin-bottom: 30px;
+		}
+		@media only screen and (max-width: 991px) {
+			font-size: 18px;
+			margin-bottom: 22px;
+		}
+		@media only screen and (max-width: 767px) {
+			font-size: 16px;
+		}
+		@media only screen and (max-width: 482px) {
+			font-size: 16px;
+		}
+	}
+	.hero-btn {
+		display: inline-block;
+		text-decoration: none;
+		border: 0;
+		background-image: linear-gradient(to left, #7b42ec, #0eb3fd);
+		padding: 11px 35px;
+		border-radius: 50px;
+		color: #fff;
+		transition: all 0.2s ease-in;
+		font-size: 16px;
+		font-weight: 600;
+		&:hover,
+		&:focus {
+			background-image: linear-gradient(to right, #7b42ec, #0eb3fd);
+			color: #fff;
+		}
+	}
+}
