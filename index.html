@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
-  <link rel="stylesheet" href="assets/css/main.css?v=3" />
+  <link rel="stylesheet" href="assets/css/main.css?v=4" />
 </head>
 <body>
   <!--[if lte IE 9]>
@@ -25,6 +25,12 @@
       </p>
     <![endif]-->
 
+  <div class="doge-price">
+    <div class="price-flex">
+      <p class="coin-nam"> DOGE </p>
+      <span>$</span><span id="dogecoin"> </span>
+    </div><!-- /.price-flex -->
+  </div><!-- /.doge-price -->
 
   <header class="header">
     <div class="navbar-area  px-xl-5">
@@ -63,7 +69,7 @@
 
             <ul class="navbar-nav social">
               <li>
-                <a href="https://app.ezdoge.net/" target="_blank"fo class="btn-hero"> Utility Dashboard </a>
+                <a href="https://app.ezdoge.net/" target="_blank" fo class="btn-hero"> Utility Dashboard </a>
               </li>
             </ul>
 
@@ -93,16 +99,16 @@
         <p class="wow fadeInLeft" data-wow-delay=".5s">
           Our tokenomics ensure holders are rewarded and the token becomes more stable with every transaction.
         </p>
-       <div class="btns-con">
-        <a href="#" class="btn-hero btn-swap">
-          <img src="assets/img/resrc/pancakeswap-cake-logo.svg" alt="">
-          <span> Buy EZ Doge</span>
-         </a>
-         <a href="#" class="btn-hero btn-poo">
-          <img src="assets/img/resrc/poocoin-poocoin-logo.svg" alt="">
-         <span> View Our Chart</span>
-         </a>
-       </div><!-- /.btns-con -->
+        <div class="btns-con">
+          <a href="#" class="btn-hero btn-swap">
+            <img src="assets/img/resrc/pancakeswap-cake-logo.svg" alt="">
+            <span> Buy EZ Doge</span>
+          </a>
+          <a href="#" class="btn-hero btn-poo">
+            <img src="assets/img/resrc/poocoin-poocoin-logo.svg" alt="">
+            <span> View Our Chart</span>
+          </a>
+        </div><!-- /.btns-con -->
       </div><!-- /.hero-inner -->
     </div><!-- /.container -->
   </section><!-- /.hero-area -->
@@ -161,9 +167,9 @@
 
   <section class="token" id="token">
     <div class="container">
-      <div class="row justify-content-between">
+      <div class="row justify-content-between gx-0 gy-4 align-items-center">
 
-        <div class="col-12">
+        <div class="col-lg-6">
           <div class="chart-box">
             <div class="sec-t2  mb-4">
               <h2> Our Tokenomics </h2>
@@ -173,9 +179,9 @@
               </p>
             </div><!-- /.sec-t -->
 
-           <div class="canva-con mx-auto" style="max-width: 660px;">
-            <canvas id="chart1"></canvas>
-           </div><!-- /.canva-con -->
+            <div class="canva-con mx-auto" style="max-width: 660px;">
+              <canvas id="chart1"></canvas>
+            </div><!-- /.canva-con -->
 
             <div class="chart-list">
 
@@ -211,10 +217,74 @@
           </div><!-- /.token-box -->
         </div><!-- /.col-lg-5 -->
 
+        <div class="col-lg-5">
+          <img src="assets/img/hero/doge-black.png" class="img-fluid" alt="">
+        </div><!-- /.col-lg-5 -->
+
 
       </div><!-- /.row -->
     </div><!-- /.container -->
   </section><!-- /.token -->
+
+
+  <section class="reward">
+    <div class="container">
+      <div class="sec-t3">
+        <h2> TOKEN & REWARD <br> DETAILS </h2>
+      </div><!-- /.sec-t3 -->
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <div class="r-single">
+            <div class="r-header">
+              <img src="assets/img/resrc/white-doge.png" class="r-logo" alt="">
+              <h3> EZ DOGE </h3>
+              <span> USE THE DETAILS BELOW TO ADD THE TOKEN TO YOUR WALLET OR TO PURCHASE EZ DOGE </span>
+            </div><!-- /.r-header -->
+            <div class="r-body">
+              <p style="word-break: break-all;">
+                <strong> CONTRACT:</strong> 0xd47Ea3a5d8d63262A7C725c8Ec30C68BF0660cd2
+              </p>
+              <p> <strong>NETWORK:</strong> BSC </p>
+              <p> <strong>SYMBOL:</strong> EZDOGE </p>
+              <p> <strong>DECIMALS:</strong> 18 </p>
+            </div><!-- /.r-body -->
+
+            <a href="#" class="btn-hero btn-swap">
+              <img src="assets/img/resrc/pancakeswap-cake-logo.svg" alt="">
+              <span> Buy EZ Doge</span>
+            </a>
+
+          </div><!-- /.r-single -->
+        </div><!-- /.col-lg-6 -->
+
+        <div class="col-lg-6">
+          <div class="r-single">
+            <div class="r-header">
+              <img src="assets/img/resrc/doge-logo.png" class="r-logo" alt="">
+              <h3> DOGECOIN </h3>
+              <span> USE THE DETAILS BELOW TO ADD THE TOKEN TO YOUR WALLET  AND SEE YOUR REWARDS   </span>
+            </div><!-- /.r-header -->
+            <div class="r-body">
+              <p style="word-break: break-all;">
+                <strong> CONTRACT:</strong> 0xba2ae424d960c26247dd6c32edc70b295c744c43
+              </p>
+              <p> <strong>NETWORK:</strong> BSC </p>
+              <p> <strong>SYMBOL:</strong> DOGE </p>
+              <p> <strong>DECIMALS:</strong> 8 </p>
+            </div><!-- /.r-body -->
+
+            <a href="#" class="btn-hero btn-swap">
+              <img src="assets/img/resrc/pancakeswap-cake-logo.svg" alt="">
+              <span> Buy Dogecoin</span>
+            </a>
+
+          </div><!-- /.r-single -->
+        </div><!-- /.col-lg-6 -->
+
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section><!-- /.reward -->
+
 
 
 
@@ -366,6 +436,29 @@
 
   </script>
 
+  <script>
+    var btc = document.getElementById("bitcoin");
+    var eth = document.getElementById("ethereum");
+    var bnb = document.getElementById("binancecoin");
+    var sol = document.getElementById("solana");
+    var xrp = document.getElementById("ripple");
+    var doge = document.getElementById("dogecoin");
+
+    var liveprice = {
+      "async": true,
+      "scroosDomain": true,
+      "url": "https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=usd&precision=3",
+
+      "method": "GET",
+      "headers": {}
+    }
+
+    $.ajax(liveprice).done(function (response) {
+
+      doge.innerHTML = response.dogecoin.usd;
+
+    });
+  </script>
 
 
 </body>

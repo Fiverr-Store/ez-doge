@@ -102,3 +102,137 @@
     }
   }
 }
+
+
+/*--------------------------------------------------------------
+# reward
+--------------------------------------------------------------*/
+.reward{
+  padding: 70px 0px;
+  @media only screen and (max-width: 767px) {
+   padding: 50px 0px;
+  }
+  background-color: $main-color;
+
+  .sec-t3{
+    text-align: center;
+    h2{
+      font-size: 40px;
+      font-weight: 400;
+      color: $secondary-color;
+      letter-spacing: -0.5px;
+      position: relative;
+      margin-bottom: 46px;
+      @media only screen and (max-width: 1199px) {
+       margin-bottom: 36px;
+       font-size: 37px;
+      }
+      @media only screen and (max-width: 767px) {
+       font-size: 32px;
+       margin-bottom: 30px;
+      }
+      @media only screen and (max-width: 482px) {
+       font-size: 28px;
+       margin-bottom: 26px;
+      }
+      &::before{
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 4px;
+        border-radius: 3px;
+        background-color: $primary-color;
+      }
+    }
+
+  }
+
+  .r-single{
+    background-color: $secondary-color;
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+    padding: 30px 30px;
+    text-align: center;
+    border-radius: 10px;
+    @media only screen and (max-width: 767px) {
+     padding: 25px 25px;
+    }
+    .r-header{
+      margin-bottom: 20px;
+      @media only screen and (max-width: 767px) {
+       margin-bottom: 12px;
+      }
+      h3{
+        font-size: 22px;
+        letter-spacing: -0.7px;
+        margin-bottom: 8px;
+      }
+      span{
+        font-size: 11px;
+      }
+      .r-logo{
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+    }
+    .r-body{
+      p{
+        &:not(:last-child) {
+        margin-bottom: 6px;
+        }
+        font-size: 15px;
+      }
+    }
+  }
+  .btn-hero {
+    font-family: $font-t;
+		display: inline-flex;
+    align-items: center;
+		text-decoration: none;
+		border: 0;
+    background-color: $main-color;
+		border-radius: 6px;
+		color: #111;
+		transition: all 0.2s ease-in;
+		font-size: 14px;
+		font-weight: 500;
+    letter-spacing: -0.8px;
+    margin-top: 26px;
+    @media only screen and (max-width: 767px) {
+     margin-top: 18px;
+    }
+		&:hover,
+		&:focus {
+		 opacity: .8;
+		}
+    img{
+      width: 45px;
+      height: 45px;
+      border-radius: 6px 0px 0px 6px;
+    }
+    span{
+      padding: 0px 12px 0px 9px;
+    }
+    &.btn-swap{
+      background-color: #6cf2fb;
+      color: #111;
+     img{
+      background-color: #3DD6E2;
+      padding: 6px;
+     }
+    }
+    &.btn-poo{
+      background-color: #bb8c65;
+      img{
+        background-color: #735136;
+        padding: 7px;
+      }
+    }
+	}
+
+}
