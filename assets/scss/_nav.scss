@@ -10,6 +10,7 @@
 	z-index: 99;
 	transition: all 0.3s ease-out 0s;
 	background-color: transparent;
+  font-family: $font-t;
 }
 
 .navbar {
@@ -62,14 +63,14 @@
 				text-decoration: none;
 				font-size: 13px;
 				font-weight: 600;
-        letter-spacing: -0.8px;
+        letter-spacing: -0.9px;
 				color: $secondary-color;
 				transition: all 0.3s ease-out 0s;
 				padding: 10px 0;
 				position: relative;
 				&:hover,
 				&.active {
-					color: $primary-color;
+				color: #3866d2;
 				}
 
 				@media only screen and (min-width: 768px) and (max-width: 991px) {

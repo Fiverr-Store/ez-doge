@@ -1,107 +1,103 @@
 /*--------------------------------------------------------------
-# verify
+# about
 --------------------------------------------------------------*/
 
-.verify {
-	background-color: #4c43cd;
-  &.bg-main{
-    background-color: $main-color;
+.sec-t{
+  h2{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    position: relative;
+    margin-bottom: 46px;
+    @media only screen and (max-width: 1199px) {
+     margin-bottom: 36px;
+     font-size: 37px;
+    }
+    @media only screen and (max-width: 767px) {
+     font-size: 32px;
+     margin-bottom: 30px;
+    }
+    @media only screen and (max-width: 482px) {
+     font-size: 28px;
+     margin-bottom: 26px;
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 50px;
+      height: 4px;
+      border-radius: 3px;
+      background-color: $primary-color;
+    }
   }
-	background-image: radial-gradient(
-			93% 87% at 87% 89%,
-			#0000003b 0%,
-			transparent 86.18%
-		),
-		radial-gradient(
-			66% 87% at 26% 20%,
-			rgba(255, 255, 255, 0.41) 0%,
-			rgba(255, 255, 255, 0) 69.79%,
-			rgba(255, 255, 255, 0) 100%
-		);
-	position: relative;
-	padding: 70px 0px;
-	@media only screen and (max-width: 767px) {
-		padding: 20px 0px;
-	}
-	.ver-text {
-		h2 {
-			font-size: 60px;
-			font-weight: 600;
-			color: #fff;
-			margin-bottom: 28px;
-			@media only screen and (max-width: 1299px) {
-				font-size: 55px;
-				margin-bottom: 23px;
-			}
-			@media only screen and (max-width: 1199px) {
-				font-size: 50px;
-				margin-bottom: 20px;
-			}
-			@media only screen and (max-width: 991px) {
-				font-size: 40px;
-			}
-			@media only screen and (max-width: 767px) {
-				font-size: 34px;
-				margin-bottom: 18px;
-			}
-			@media only screen and (max-width: 482px) {
-				font-size: 34px;
-			}
-		}
-		p {
-			font-size: 22px;
-			font-weight: 500;
-			margin-bottom: 35px;
-			@media only screen and (max-width: 1299px) {
-				font-size: 20px;
-				margin-bottom: 30px;
-			}
-			@media only screen and (max-width: 1199px) {
-				font-size: 19px;
-			}
-			@media only screen and (max-width: 991px) {
-				font-size: 18px;
-				margin-bottom: 25px;
-			}
-			@media only screen and (max-width: 767px) {
-				font-size: 16px;
-				margin-bottom: 22px;
-			}
-		}
-	}
-
-	.left-corner {
-		position: absolute;
-		top: 9%;
-		left: -10px;
-		height: 60px;
-		z-index: -1;
-	}
-
-	.right-corner {
-		position: absolute;
-		top: 2%;
-		right: -10px;
-		height: 40px;
-		z-index: -1;
-	}
-	.bottm-corner {
-		position: absolute;
-		bottom: 15%;
-		left: 10%;
-		height: 60px;
-		z-index: -1;
-	}
-
-	.bottm-corner-r {
-		position: absolute;
-		bottom: 4%;
-		right: 10%;
-		height: 40px;
-		z-index: -1;
-	}
+  p{
+    font-size: 16px;
+    @media only screen and (max-width: 767px) {
+     font-size: 15px;
+    }
+  }
 }
 
-/*--------------------------------------------------------------
-# press
---------------------------------------------------------------*/
+
+.about{
+  background-color: $secondary-color;
+  padding: 70px 0px;
+  @media only screen and (max-width: 991px) {
+   padding: 60px 0px;
+  }
+  @media only screen and (max-width: 767px) {
+   padding: 40px 0px;
+  }
+  .list-p{
+    padding: 0;
+    margin: 0;
+    padding-top: 37px;
+    @media only screen and (max-width: 1199px) {
+     padding-top: 27px;
+     }
+     @media only screen and (max-width: 767px) {
+      padding-top: 22px;
+     }
+    li{
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+      margin-bottom: 20px;
+      @media only screen and (max-width: 767px) {
+       margin-bottom: 16px;
+      }
+      }
+    }
+    i{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 39px;
+      min-width: 39px;
+      height: 39px;
+      border-radius: 100%;
+      background-color: $primary-color;
+      color: $secondary-color;
+      font-size: 20px;
+      margin-right: 10px;
+      @media only screen and (max-width: 767px) {
+        width: 30px;
+        min-width: 30px;
+        height: 30px;
+        font-size: 17px;
+        margin-right: 8px;
+      }
+    }
+    span{
+      font-family: $font-t;
+      letter-spacing: -0.7px;
+      font-weight: 500;
+      font-size: 16px;
+      @media only screen and (max-width: 767px) {
+       font-size: 14px;
+      }
+    }
+  }
+}

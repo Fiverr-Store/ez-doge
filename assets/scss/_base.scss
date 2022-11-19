@@ -7,8 +7,12 @@
 	background: $primary-color;
 }
 
+html{
+  scroll-padding-top: 20px;
+}
+
 body {
-  font-family: 'Lexend Mega', sans-serif;
+  font-family: $font-p;
 	font-weight: 400;
 	font-style: normal;
   background-color: $main-color;
@@ -68,9 +72,10 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: $font-t;
 	margin: 0;
 	color: $title-color;
-  font-weight: 500;
+  font-weight: 400;
 }
 p {
 	margin: 0;

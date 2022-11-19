@@ -74,10 +74,12 @@
     text-transform: uppercase;
 	}
 	p {
+    font-family: $font-t;
 		font-size: 17px;
     color: $secondary-color;
 		font-weight: 400;
 		margin-bottom: 35px;
+    letter-spacing: -0.5px;
 		@media only screen and (max-width: 1199px) {
 			font-size: 17px;
 			margin-bottom: 30px;

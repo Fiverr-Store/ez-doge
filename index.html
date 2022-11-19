@@ -11,10 +11,10 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
-  <link rel="stylesheet" href="assets/css/main.css?v=1" />
+  <link rel="stylesheet" href="assets/css/main.css?v=2" />
 </head>
 <body>
   <!--[if lte IE 9]>
@@ -44,16 +44,16 @@
           <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
             <ul id="nav" class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="active" href="/"> Home </a>
+                <a class="active page-scroll" href="#home"> Home </a>
               </li>
               <li class="nav-item">
-                <a href="#"> About Us </a>
+                <a href="#about" class="page-scroll"> About Us </a>
               </li>
               <li class="nav-item">
                 <a href="#"> Our Utility </a>
               </li>
               <li class="nav-item">
-                <a href="#"> Tokenomics </a>
+                <a href="#token" class="page-scroll"> Tokenomics </a>
               </li>
               <li class="nav-item">
                 <a href="#"> Rewards </a>
@@ -84,7 +84,7 @@
   </header>
 
 
-  <section class="hero-area">
+  <section class="hero-area" id="home">
     <img src="assets/img/hero/two.jpg" class="move" alt="">
     <div class="container">
       <div class="hero-inner">
@@ -99,71 +99,101 @@
     </div><!-- /.container -->
   </section><!-- /.hero-area -->
 
-
-  <section class="verify">
-
-    <img src="assets/img/hero/verify.png" class="left-corner" alt="">
-    <img src="assets/img/hero/verify.png" class="right-corner" alt="">
-    <img src="assets/img/hero/verify.png" class="bottm-corner" alt="">
-    <img src="assets/img/hero/verify.png" class="bottm-corner-r" alt="">
-
+  <section class="about" id="about">
     <div class="container">
-      <div class="row align-items-center gx-0 gy-4 justify-content-between">
-        <div class="col-lg-5">
-          <div class="ver-text wow fadeInLeft" data-wow-delay=".4s">
+      <div class="row justify-content-between gx-0 gy-4 align-items-center">
+        <div class="col-lg-5 col-md-6">
+          <img src="assets/img/hero/doge.png" style="transform: scaleX(-1);" class="img-fluid" alt="">
+        </div><!-- /.col-lg-5 -->
+        <div class="col-lg-6">
+          <div class="sec-t">
             <h2> Why EZ Doge? </h2>
             <p>
-              Here at Surge, we have the facilities to get you verified on all your favourite social medias facilities to get you
-              verified facilities to get you verified facilities to get you verified
+              We are taking things back to where the phenomenon of DEFI tokens really began. Safemoon style tokenomics that
+              generate liquidity and reward holders with Dogecoin. We firmly believe Dogecoin is well on the way to becoming $1
+              per coin. Don't miss your chance to earn as much Dogecoin as possible before it goes to the moon on a Elon Musk
+              SpaceX Rocket!.
             </p>
-            <p>
-              Growing your brand can be hard work, let us do it for you, we have connections & can get your name out there in a
-              short amount of time.
-            </p>
-            <a href="#" class="btn-main">
-              Learn more
-            </a>
-          </div><!-- /.ver-text -->
+          </div><!-- /.sec-t -->
+          <ul class="list-p">
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span> NO TRUST NEEDED TO INVEST! LIQUIDITY LOCKED - NO TEAM TOKENS - NO PRIVATE OR SEED SALES - SAFE TRUSTED
+                CONTRACT CREATED BY PINKSALE TOKEN GENERATOR - OWNERSHIP RENOUNCED </span>
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span> TOKENOMICS THAT ENSURE HOLDERS ARE REWARDED & TOKEN GROWS WITH EVERY SINGLE TRANSACTION - ON AUTOPILOT!
+              </span>
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span> SUBMITTED TO CMC & CG </span>
+            </li>
+          </ul>
         </div><!-- /.col-lg-5 -->
-        <div class="col-lg-5 col-sm-8 col-10">
-          <div class="wow fadeInRight" data-wow-delay=".5s">
-            <img src="assets/img/resrc/doge-black.png" class="img-fluid" alt="">
-          </div>
-        </div><!-- /.col-lg-5 -->
+
       </div><!-- /.row -->
     </div><!-- /.container -->
-  </section><!-- /.verify -->
+  </section><!-- /.about -->
 
-  <section class="verify bg-main">
+
+  <section class="token" id="token">
     <div class="container">
-      <div class="row align-items-center gx-0  justify-content-between">
+      <div class="row justify-content-between">
 
-        <div class="col-lg-5 col-md-8 col-10">
-          <div>
-            <img src="assets/img/hero/doge.png" style="transform: scaleX(-1);" class="img-fluid" alt="">
-          </div>
+        <div class="col-12">
+          <div class="chart-box">
+            <div class="sec-t2 mb-4">
+              <h2> Our Tokenomics </h2>
+              <p>
+                Our total supply is 50,000,000. 100% of the total supply is being used for the fair launch and starting liquidity.
+                We charge a 10% tax on each transaction:
+              </p>
+            </div><!-- /.sec-t -->
+
+            <canvas id="chart1"></canvas>
+
+            <div class="chart-list">
+
+
+              <div class="chart-wrap">
+
+                <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
+                  <span class="yellow"> </span>
+                  <p>  Doge Rewards distributed to all holders  </p>
+                  <h5> 5%  </h5>
+                </div><!-- /.chart-point -->
+
+                <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
+                  <span class="purple"> </span>
+                  <p>  Added back into liquidity </p>
+                  <h5> 4%  </h5>
+                </div><!-- /.chart-point -->
+
+                <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
+                  <span class="red"> </span>
+                  <p>  Dev creator fee   </p>
+                  <h5>  1%  </h5>
+                </div><!-- /.chart-point -->
+
+              </div><!-- /.chart-wrap -->
+
+
+
+
+
+
+            </div><!-- /.chart-list -->
+
+          </div><!-- /.token-box -->
         </div><!-- /.col-lg-5 -->
 
-        <div class="col-lg-5">
-          <div class="ver-text  wow fadeInUp" data-wow-delay=".4s">
-            <h2> Tokenomics </h2>
-            <p>
-              Growing your brand can be hard work, let us do it for you, we have connections & can get your name out there in a
-              short amount of time.
-            </p>
-            <p>
-              Growing your brand can be hard work, let us do it for you, we have connections & can get your name out there in a
-              short amount of time.
-            </p>
-            <a href="#" class="btn-main">
-              Learn more
-            </a>
-          </div><!-- /.ver-text -->
-        </div><!-- /.col-lg-5 -->
 
       </div><!-- /.row -->
     </div><!-- /.container -->
-  </section><!-- /.verify -->
+  </section><!-- /.token -->
+
 
 
 
@@ -184,7 +214,7 @@
 
           <li>
             <a href="#" target="_blank">
-            <img src="assets/img/logo/twitter.png" alt="">
+              <img src="assets/img/logo/twitter.png" alt="">
             </a>
           </li>
 
@@ -226,6 +256,7 @@
   <script src="assets/js/jquery-3.6.0.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/chart.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
     $(document).ready(function () {
@@ -271,6 +302,46 @@
       return speed;
 
     }
+
+
+    (function ($) {
+      // ---------Chart---------
+
+      // chart1
+      if (jQuery("#chart1").length > 0) {
+        var ctx = document.getElementById("chart1");
+        Chart.Tooltip.positioners.cursor = function (
+          chartElements,
+          coordinates
+        ) {
+          return coordinates;
+        };
+        var myChart = new Chart(ctx, {
+          type: 'pie',
+          data: {
+            labels: ["Doge Rewards distributed to all holders", "Added back into liquidity", "Dev creator fee  "],
+            datasets: [
+              {
+                label: "#",
+                data: [5, 4, 1],
+                backgroundColor: ["#ffd014", "#800080", "#ff0000"],
+                borderWidth: 0,
+                hoverOffset: false,
+              },
+            ],
+          },
+          options: {
+            legend: {
+              display: false,
+            },
+          },
+        });
+      }
+
+
+
+    })(jQuery);
+
   </script>
 
 
