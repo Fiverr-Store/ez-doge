@@ -159,10 +159,9 @@ h6 a {
   position: absolute;
   inset: 8px;
   margin: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF805A), to(#FF6348));
-  background: linear-gradient(#FF805A, #FF6348);
-  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
-          box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+  background: #E6CB62;
+  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.62);
+          box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.62);
   border-radius: 50%;
 }
 .page-loader .loader:before {
@@ -170,8 +169,7 @@ h6 a {
   position: absolute;
   inset: 0px;
   margin: auto;
-  background-color: #4c43cd;
-  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  background-color: #0B474B;
   -webkit-animation: crlMugLoader 2s linear infinite alternate;
           animation: crlMugLoader 2s linear infinite alternate;
 }
