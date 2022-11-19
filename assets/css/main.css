@@ -531,16 +531,6 @@ h6 a {
       justify-self: center;
   text-align: center;
 }
-.hero-area .move {
-  max-height: 70px;
-  position: absolute;
-  border-radius: 16px;
-}
-@media only screen and (max-width: 767px) {
-  .hero-area .move {
-    max-height: 50px;
-  }
-}
 .hero-area .hero-inner {
   max-width: 700px;
   margin-left: auto;
@@ -604,19 +594,19 @@ h6 a {
   font-size: 17px;
   color: #0B474B;
   font-weight: 400;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   letter-spacing: -0.5px;
 }
 @media only screen and (max-width: 1199px) {
   .hero-area p {
     font-size: 17px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 991px) {
   .hero-area p {
     font-size: 16px;
-    margin-bottom: 22px;
+    margin-bottom: 12px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -630,21 +620,63 @@ h6 a {
   }
 }
 .hero-area .btn-hero {
-  display: inline-block;
+  font-family: "Lexend Mega", sans-serif;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
   border: 0;
-  background-color: #0B474B;
-  padding: 12px 25px;
+  background-color: #F0EBE5;
   border-radius: 6px;
-  color: #fff;
+  color: #111;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
+  letter-spacing: -0.8px;
+  margin-top: 10px;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 .hero-area .btn-hero:hover, .hero-area .btn-hero:focus {
-  background-color: #F0EBE5;
-  color: #0B474B;
+  opacity: 0.8;
+}
+.hero-area .btn-hero img {
+  width: 45px;
+  height: 45px;
+  border-radius: 6px 0px 0px 6px;
+}
+.hero-area .btn-hero span {
+  padding: 0px 12px 0px 9px;
+}
+.hero-area .btn-hero.btn-swap {
+  background-color: #6cf2fb;
+  color: #111;
+}
+.hero-area .btn-hero.btn-swap img {
+  background-color: #3DD6E2;
+  padding: 6px;
+}
+.hero-area .btn-hero.btn-poo {
+  background-color: #bb8c65;
+}
+.hero-area .btn-hero.btn-poo img {
+  background-color: #735136;
+  padding: 7px;
+}
+
+.move {
+  max-height: 100px;
+  position: absolute;
+  border-radius: 16px;
+}
+@media only screen and (max-width: 767px) {
+  .move {
+    max-height: 50px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -695,6 +727,7 @@ h6 a {
 }
 
 .about {
+  position: relative;
   background-color: #0B474B;
   padding: 70px 0px;
 }
@@ -749,13 +782,13 @@ h6 a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 39px;
-  min-width: 39px;
-  height: 39px;
+  width: 35px;
+  min-width: 35px;
+  height: 35px;
   border-radius: 100%;
   background-color: #E6CB62;
   color: #0B474B;
-  font-size: 20px;
+  font-size: 18px;
   margin-right: 10px;
 }
 @media only screen and (max-width: 767px) {
@@ -821,6 +854,11 @@ h6 a {
 .token {
   background-color: #E6CB62;
   padding: 70px 0px;
+}
+@media only screen and (max-width: 767px) {
+  .token {
+    padding: 50px 0px;
+  }
 }
 
 .chart-box {
@@ -898,7 +936,12 @@ h6 a {
 }
 
 .chart-list {
-  padding-top: 20px;
+  padding-top: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .chart-list {
+    padding-top: 20px;
+  }
 }
 .chart-list .chart-point {
   margin-left: auto;
@@ -961,7 +1004,7 @@ h6 a {
 # footer
 --------------------------------------------------------------*/
 footer {
-  background-color: #F0EBE5;
+  background-color: #000;
   padding: 30px 0px;
   text-align: center;
 }

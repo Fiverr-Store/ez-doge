@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
-  <link rel="stylesheet" href="assets/css/main.css?v=2" />
+  <link rel="stylesheet" href="assets/css/main.css?v=3" />
 </head>
 <body>
   <!--[if lte IE 9]>
@@ -56,16 +56,14 @@
                 <a href="#token" class="page-scroll"> Tokenomics </a>
               </li>
               <li class="nav-item">
-                <a href="#"> Rewards </a>
+                <a href="#"> Token & Rewards </a>
               </li>
-              <li class="nav-item">
-                <a href="#"> How to Buy </a>
-              </li>
+
             </ul>
 
             <ul class="navbar-nav social">
               <li>
-                <a href="#" class="btn-hero"> Utility Dashboard </a>
+                <a href="https://app.ezdoge.net/" target="_blank"fo class="btn-hero"> Utility Dashboard </a>
               </li>
             </ul>
 
@@ -85,21 +83,32 @@
 
 
   <section class="hero-area" id="home">
-    <img src="assets/img/hero/two.jpg" class="move" alt="">
+
     <div class="container">
       <div class="hero-inner">
         <div class="wow fadeInDown" data-wow-delay=".4s">
           <img src="assets/img/hero/doge-black.png" class="hero-logo" alt="">
         </div>
-        <h1 class="wow fadeInUp" data-wow-delay=".4s"> Earn Dogecoin just <br> by holding </h1>
-        <p class="wow fadeInLeft" data-wow-delay=".5s"> Earn 5% Rewards just by holding! Low Market Cap. CLICK HERE to see our
-          chart on Poocoin.app </p>
-        <a href="#" class="btn-hero"> EZ Doge Pancake Swap </a>
+        <h1 class="wow fadeInUp" data-wow-delay=".4s"> Earn Dogecoin just <br> by holding! </h1>
+        <p class="wow fadeInLeft" data-wow-delay=".5s">
+          Our tokenomics ensure holders are rewarded and the token becomes more stable with every transaction.
+        </p>
+       <div class="btns-con">
+        <a href="#" class="btn-hero btn-swap">
+          <img src="assets/img/resrc/pancakeswap-cake-logo.svg" alt="">
+          <span> Buy EZ Doge</span>
+         </a>
+         <a href="#" class="btn-hero btn-poo">
+          <img src="assets/img/resrc/poocoin-poocoin-logo.svg" alt="">
+         <span> View Our Chart</span>
+         </a>
+       </div><!-- /.btns-con -->
       </div><!-- /.hero-inner -->
     </div><!-- /.container -->
   </section><!-- /.hero-area -->
 
   <section class="about" id="about">
+    <img src="assets/img/hero/two.jpg" class="move" alt="">
     <div class="container">
       <div class="row justify-content-between gx-0 gy-4 align-items-center">
         <div class="col-lg-5 col-md-6">
@@ -116,20 +125,32 @@
             </p>
           </div><!-- /.sec-t -->
           <ul class="list-p">
+
             <li>
               <i class="fa fa-check" aria-hidden="true"></i>
-              <span> NO TRUST NEEDED TO INVEST! LIQUIDITY LOCKED - NO TEAM TOKENS - NO PRIVATE OR SEED SALES - SAFE TRUSTED
-                CONTRACT CREATED BY PINKSALE TOKEN GENERATOR - OWNERSHIP RENOUNCED </span>
+              <span> No Trust Needed to invest </span>
             </li>
             <li>
               <i class="fa fa-check" aria-hidden="true"></i>
-              <span> TOKENOMICS THAT ENSURE HOLDERS ARE REWARDED & TOKEN GROWS WITH EVERY SINGLE TRANSACTION - ON AUTOPILOT!
-              </span>
+              <span> Liquidity Locked </span>
             </li>
             <li>
               <i class="fa fa-check" aria-hidden="true"></i>
-              <span> SUBMITTED TO CMC & CG </span>
+              <span> No Team Tokens </span>
             </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span> No Private or Seed Sales </span>
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span> Trusted contract from Pinksale </span>
+            </li>
+            <li>
+              <i class="fa fa-check" aria-hidden="true"></i>
+              <span> Ownership Renounced </span>
+            </li>
+
           </ul>
         </div><!-- /.col-lg-5 -->
 
@@ -144,7 +165,7 @@
 
         <div class="col-12">
           <div class="chart-box">
-            <div class="sec-t2 mb-4">
+            <div class="sec-t2  mb-4">
               <h2> Our Tokenomics </h2>
               <p>
                 Our total supply is 50,000,000. 100% of the total supply is being used for the fair launch and starting liquidity.
@@ -152,29 +173,30 @@
               </p>
             </div><!-- /.sec-t -->
 
+           <div class="canva-con mx-auto" style="max-width: 660px;">
             <canvas id="chart1"></canvas>
+           </div><!-- /.canva-con -->
 
             <div class="chart-list">
-
 
               <div class="chart-wrap">
 
                 <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
                   <span class="yellow"> </span>
-                  <p>  Doge Rewards distributed to all holders  </p>
-                  <h5> 5%  </h5>
+                  <p> Doge Rewards distributed to all holders </p>
+                  <h5> 5% </h5>
                 </div><!-- /.chart-point -->
 
                 <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
                   <span class="purple"> </span>
-                  <p>  Added back into liquidity </p>
-                  <h5> 4%  </h5>
+                  <p> Added back into liquidity </p>
+                  <h5> 4% </h5>
                 </div><!-- /.chart-point -->
 
                 <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
                   <span class="red"> </span>
-                  <p>  Dev creator fee   </p>
-                  <h5>  1%  </h5>
+                  <p> Dev creator fee </p>
+                  <h5> 1% </h5>
                 </div><!-- /.chart-point -->
 
               </div><!-- /.chart-wrap -->
@@ -207,19 +229,19 @@
         <ul>
 
           <li>
-            <a href="#" target="_blank">
+            <a href="https://t.me/ezdogetoken" target="_blank">
               <img src="assets/img/logo/telegram.png" alt="">
             </a>
           </li>
 
           <li>
-            <a href="#" target="_blank">
+            <a href="https://twitter.com/EZDogeBsc" target="_blank">
               <img src="assets/img/logo/twitter.png" alt="">
             </a>
           </li>
 
           <li>
-            <a href="mailto:marketing@bugattidoge.com">
+            <a href="mailto:info@ezdoge.net">
               <img src="assets/img/logo/gmail.png" alt="">
             </a>
           </li>

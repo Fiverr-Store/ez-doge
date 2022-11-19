@@ -37,6 +37,9 @@ $yellow: #000;
 .token{
 background-color: $primary-color;
 padding: 70px 0px;
+@media only screen and (max-width: 767px) {
+ padding: 50px 0px;
+}
 }
 
 .chart-box {
@@ -102,8 +105,10 @@ padding: 70px 0px;
 	}
 }
 .chart-list {
-	padding-top: 20px;
-
+	padding-top: 30px;
+  @media only screen and (max-width: 767px) {
+   padding-top: 20px;
+  }
 	.chart-point {
 		&:not(:last-child) {
 			margin-bottom: 16px;
