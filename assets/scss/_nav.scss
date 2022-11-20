@@ -10,7 +10,7 @@
 	z-index: 99;
 	transition: all 0.3s ease-out 0s;
 	background-color: transparent;
-  font-family: $font-t;
+	font-family: $font-t;
 }
 
 .navbar {
@@ -31,7 +31,7 @@
 		text-decoration: none;
 		font-size: 22px;
 		color: $secondary-color;
-		font-weight: 600;
+		font-weight: 700;
 		padding: 0;
 		img {
 			height: 70px;
@@ -61,16 +61,16 @@
 			}
 			a {
 				text-decoration: none;
-				font-size: 13px;
-				font-weight: 600;
-        letter-spacing: -0.9px;
+				font-size: 12px;
+				font-weight: 700;
+				letter-spacing: -0.9px;
 				color: $secondary-color;
 				transition: all 0.3s ease-out 0s;
 				padding: 10px 0;
 				position: relative;
 				&:hover,
 				&.active {
-				color: #3866d2;
+					color: #3866d2;
 				}
 
 				@media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -174,14 +174,14 @@
 		@media (max-width: 767px) {
 			padding: 8px 0;
 		}
-    .nav-item{
-      a{
-        color: #fff;
-      }
-    }
+		.nav-item {
+			a {
+				color: #fff;
+			}
+		}
 		.navbar-brand {
 			padding: 0;
-      color: $primary-color;
+			color: $primary-color;
 			img {
 				height: 55px;
 				transition: all 0.4s ease-in-out;
@@ -219,41 +219,29 @@
 		}
 
 		.btn-hero {
-      background-color: #38d2d2;
-      background-image: radial-gradient(
-          93% 87% at 87% 89%,
-          rgba(0, 0, 0, 0.23) 0%,
-          transparent 86.18%
-        ),
-        radial-gradient(
-          66% 66% at 26% 20%,
-          rgba(255, 255, 255, 0.55) 0%,
-          rgba(255, 255, 255, 0) 69.79%,
-          rgba(255, 255, 255, 0) 100%
-        );
-      box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25),
-        inset 0px 3px 9px rgba(255, 255, 255, 0.3),
-        inset 0px 1px 1px rgba(255, 255, 255, 0.6),
-        inset 0px -8px 36px rgba(0, 0, 0, 0.3),
-        inset 0px 1px 5px rgba(255, 255, 255, 0.6),
-        2px 19px 31px rgba(0, 0, 0, 0.2);
+			background-color: #37fc7f;
+			box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25),
+				inset 0px 3px 9px rgba(255, 255, 255, 0.3),
+				inset 0px 1px 1px rgba(255, 255, 255, 0.6),
+				inset 0px -8px 36px rgba(0, 0, 0, 0.3),
+				inset 0px 1px 5px rgba(255, 255, 255, 0.6),
+				2px 19px 31px rgba(0, 0, 0, 0.2);
 			border: 0;
 			display: inline-flex;
 			text-decoration: none;
 			color: #111;
 			padding: 11px 15px;
-			font-size: 13px;
-			font-weight: 600;
-      letter-spacing: -0.8px;
+			font-size: 12px;
+			font-weight: 700;
+			letter-spacing: -0.8px;
 			border-radius: 6px;
 			&:hover {
-				background-color: #69f99d;
-				color: green;
+				background-color: #00e755;
+				color: #111;
 			}
 		}
 	}
 }
-
 
 .nav-center {
 	/** Large devices (desktops, 992px and up) **/
