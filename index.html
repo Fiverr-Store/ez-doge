@@ -114,11 +114,11 @@
   </section><!-- /.hero-area -->
 
   <section class="about" id="about">
-    <img src="assets/img/hero/two.jpg" class="move" alt="">
+    <!-- <img src="assets/img/hero/two.jpg" class="move" alt=""> -->
     <div class="container">
-      <div class="row justify-content-between gx-0 gy-4 align-items-center">
+      <div class="row justify-content-between  gx-0 gy-4 align-items-center">
         <div class="col-lg-5 col-md-6">
-          <img src="assets/img/hero/doge.png" style="transform: scaleX(-1);" class="img-fluid" alt="">
+          <img src="assets/img/hero/one.jpg" style="border-radius: 14px;" class="img-fluid" alt="">
         </div><!-- /.col-lg-5 -->
         <div class="col-lg-6">
           <div class="sec-t">
@@ -351,49 +351,6 @@
   <script src="assets/js/chart.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    $(document).ready(function () {
-      animateDiv();
-
-    });
-
-    function makeNewPosition() {
-
-      // Get viewport dimensions (remove the dimension of the div)
-      var h = $(window).height() - 50;
-      var w = $(window).width() - 50;
-
-      var nh = Math.floor(Math.random() * h);
-      var nw = Math.floor(Math.random() * w);
-
-      return [nh, nw];
-
-    }
-
-    function animateDiv() {
-      var newq = makeNewPosition();
-      var oldq = $('.move').offset();
-      var speed = calcSpeed([oldq.top, oldq.left], newq);
-
-      $('.move').animate({ top: newq[0], left: newq[1] }, speed, function () {
-        animateDiv();
-      });
-
-    };
-
-    function calcSpeed(prev, next) {
-
-      var x = Math.abs(prev[1] - next[1]);
-      var y = Math.abs(prev[0] - next[0]);
-
-      var greatest = x > y ? x : y;
-
-      var speedModifier = 0.1;
-
-      var speed = Math.ceil(greatest / speedModifier);
-
-      return speed;
-
-    }
 
 
     (function ($) {
