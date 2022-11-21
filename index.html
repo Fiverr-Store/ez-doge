@@ -63,7 +63,7 @@
                 <a href="#token" class="page-scroll"> Tokenomics </a>
               </li>
               <li class="nav-item">
-                <a href="#reward" class="page-scroll"> Token & Rewards </a>
+                <a href="#reward" class="page-scroll"> Token Info </a>
               </li>
 
             </ul>
@@ -198,7 +198,7 @@
           <div class="col-md-12">
             <div class="main-timeline">
 
-              <div class="timeline wow fadeInLeft" data-wow-delay="0.4s">
+              <div class="timeline green-box wow fadeInLeft" data-wow-delay="0.4s">
                 <div class="timeline-content">
 
                   <h3 class="title"> STAGE 1 - DAPP LAUNCH (complete) </h3>
@@ -233,7 +233,7 @@
               </div>
               <!--.timeline-->
 
-              <div class="timeline wow fadeInLeft" data-wow-delay="0.4s">
+              <div class="timeline green-box wow fadeInLeft" data-wow-delay="0.4s">
                 <div class="timeline-content">
 
                   <h3 class="title"> STAGE 2 - DAPP UPDATE (Complete) </h3>
@@ -245,7 +245,7 @@
                           Swap from Dogecoin network directly to EZ Doge on BSC
                           With are not currently aware of any direct bridge that exists directly between the Dogecoin and BSC
                           networks. This could be huge! Think about how big the Dogecoin army is? They will now be able to come
-                          directly to EZ Doge with 0% hassle and in a single click! 💪🔥
+                          directly to EZ Doge with 0% hassle and in a single click!
                         </span>
                       </li>
                     </ul>
@@ -254,8 +254,8 @@
               </div>
               <!--.timeline-->
 
-              <div class="timeline wow fadeInLeft" data-wow-delay="0.4s">
-                <div class="timeline-content">
+              <div class="timeline  wow fadeInLeft" data-wow-delay="0.4s">
+                <div class="timeline-content flash">
 
                   <h3 class="title"> STAGE 3 - BRIDGE EXPANSION (expected December 2022) </h3>
 
@@ -274,7 +274,7 @@
               <!--.timeline-->
 
               <div class="timeline wow fadeInLeft" data-wow-delay="0.4s">
-                <div class="timeline-content">
+                <div class="timeline-content flash">
 
                   <h3 class="title"> STAGE 4 – FIAT RAMP (Q1 2023 - depending on continued community support) </h3>
 
@@ -341,7 +341,7 @@
                 <div class="chart-point wow fadeInDown" data-wow-delay=".5s">
                   <span class="red"> </span>
                   <p> Added Back into Liquidity
-                    Dev creator fee </p>
+                   </p>
                   <h5> 1% </h5>
                 </div><!-- /.chart-point -->
 
@@ -465,6 +465,14 @@
     <div class="cotainer">
       <div class="footer-links">
 
+        <div class="doge-price-footer">
+          <div class="price-flex">
+            <p class="coin-nam"> DOGE  </p>
+            <span class="d-block" style="font-size: 12px; line-height: 1.1;"> Price </span>
+            <span>$</span><span id="dogecoin"> </span>
+          </div><!-- /.price-flex -->
+        </div><!-- /.doge-price -->
+
         <ul>
 
           <li>
@@ -537,7 +545,7 @@
         var myChart = new Chart(ctx, {
           type: 'pie',
           data: {
-            labels: ["Doge Rewards distributed to all holders", "Marketing Funds", "Added Back Dev creator fee"],
+            labels: ["Doge Rewards distributed to all holders", "Marketing Funds", "Added Back into Liquidity"],
             datasets: [
               {
                 label: "#",

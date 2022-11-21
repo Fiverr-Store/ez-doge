@@ -64,7 +64,7 @@
 				font-size: 13px;
 				font-weight: 700;
 				letter-spacing: -0.9px;
-				color: $secondary-color;
+				color: #111;
 				transition: all 0.3s ease-out 0s;
 				padding: 10px 0;
 				position: relative;
@@ -79,6 +79,7 @@
 				@media only screen and (max-width: 991px) {
 					padding: 2px 0;
 					margin: 6px 0px;
+          color: #fff;
 				}
 				@media only screen and (max-width: 767px) {
 					display: inline-block;
@@ -124,7 +125,7 @@
 		.toggler-icon {
 			width: 30px;
 			height: 2px;
-			background-color: #fff;
+			background-color: #000;
 			display: block;
 			margin: 5px 0;
 			position: relative;

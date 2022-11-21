@@ -23,6 +23,10 @@
 	.hero-logo {
 		max-width: 260px;
 		margin-bottom: 25px;
+    background-color: $primary-color;
+    padding: 15px;
+    border-radius: 16px;
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.32);
 		@media only screen and (max-width: 1299px) {
 			max-width: 210px;
 			margin-bottom: 20px;
@@ -40,6 +44,8 @@
 		margin-bottom: 25px;
 		text-transform: uppercase;
     font-weight: 700;
+    color: $secondary-color;
+    letter-spacing: -0.3px;
 		@media only screen and (max-width: 1199px) {
 			font-size: 37px;
 			margin-bottom: 18px;
@@ -54,6 +60,7 @@
 		@media only screen and (max-width: 482px) {
 			font-size: 28px;
 		}
+
 		// background-image: linear-gradient(to left, #7b42ec, #0eb3fd);
 		// background-size: 100%;
 		// background-clip: text;
@@ -61,10 +68,10 @@
 		// -moz-background-clip: text;
 		// -webkit-text-fill-color: transparent;
 		// -moz-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1.9px;
-    -webkit-text-stroke-color: $secondary-color;
-    color: transparent;
-    text-transform: uppercase;
+    // -webkit-text-stroke-width: 1.9px;
+    // -webkit-text-stroke-color: $secondary-color;
+    // color: transparent;
+    // text-transform: uppercase;
 	}
 	p {
     font-family: $font-t;
